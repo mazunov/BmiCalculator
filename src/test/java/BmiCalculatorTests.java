@@ -6,14 +6,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.*;
 import ObjectPage.BmiCalculatorPage;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BmiCalculatorTests {
 
     private WebDriver driver;
     @Before
     public void setUp(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        driver = new ChromeDriver(options);
+        //driver.manage().window().maximize();
         driver.get("http://cookbook.seleniumacademy.com/bmicalculator.html");
     }
     @Test
