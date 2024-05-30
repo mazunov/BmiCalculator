@@ -1,3 +1,4 @@
+import org.example.Demo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,6 +21,8 @@ public class BmiCalculatorTests {
     }
     @Test
     public void testBmiCalulation(){
+        Demo d = new Demo();
+        d.DoSomething(true);
         BmiCalculatorPage copyBmiCalculatorPage = new BmiCalculatorPage(driver);
 
         // enviar la estatura
@@ -34,6 +37,8 @@ public class BmiCalculatorTests {
     }
     @Test
     public void testBmiCalculationBmiOverweight(){
+        Demo d = new Demo();
+        d.DoSomething(true);
         BmiCalculatorPage copyBmiCalculatorPage = new BmiCalculatorPage(driver);
 
         // enviar la estatura
