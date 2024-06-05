@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BmiCalculatorTests {
 
-    private WebDriver driver;
+    public static WebDriver driver;
     @Before
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
